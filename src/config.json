@@ -1,0 +1,51 @@
+{
+    "lstmae": {
+        "params": {
+            "seed": 33,
+            "gpu":0,
+            "num_epochs": 40,
+            "sequence_length": 96,
+            "hidden_size": 64,
+            "batch_size": 24,
+            "n_layer_encoder": 1,
+            "n_layer_decoder": 1
+        }
+    },
+    "tcnae": {
+        "params": {
+            "num_epochs": 10,
+            "sequence_length": 96,
+            "nb_filters": 96,
+            "filters_conv1d" : 96,
+            "latent_sample_rate" : 4
+
+        }
+
+    },
+    "dghl": {
+        "params": {
+            "window_size": 96,
+            "window_step": 96,
+            "hidden_multiplier": 16,
+            "max_filters": 96,
+            "kernel_multiplier": 1,
+            "z_size": 20,
+            "z_size_up": 5,
+            "window_hierarchy": 1,
+            "z_iters": 25,
+            "z_sigma":  0.25,
+            "z_step_size": 0.1,
+            "z_iters_inference": 500,
+            "batch_size": 25, 
+            "learning_rate":  5e-3, 
+            "noise_std": 0.001,
+            "n_iterations": 1000,
+            "random_seed": 1 
+            
+         }
+
+     }
+       
+}
+
+  
